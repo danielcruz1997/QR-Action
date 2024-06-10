@@ -7,40 +7,35 @@
     <style>
         body { font-family: Arial, sans-serif; }
         .container { text-align: center; margin-top: 50px; }
-       
     </style>
 </head>
 <body>
     <div class="container">
         <h1 id="action">Aktion:</h1>
         <p id="actionText"></p>
-        
     </div>
     <script>
-        const action = [
-            { action: "Was ist die Hauptstadt von Frankreich?"},
-            { action: "Was ist 2 + 2?"},
-            { action: "Wie heißt der höchste Berg der Welt?"},
-            { action: "Was ist die größte Wüste der Welt?"}
-            
+        const actions = [
+            { action: "Was ist die Hauptstadt von Frankreich?" },
+            { action: "Was ist 2 + 2?" },
+            { action: "Wie heißt der höchste Berg der Welt?" },
+            { action: "Was ist die größte Wüste der Welt?" }
         ];
 
         function getRandomAction() {
             const randomIndex = Math.floor(Math.random() * actions.length);
-            return action[randomIndex];
+            return actions[randomIndex];
         }
 
         function showAction() {
             const randomAction = getRandomAction();
             document.getElementById('actionText').innerText = randomAction.action;
-
         }
-
-        
 
         // Initial load
         showAction();
     </script>
 </body>
 </html>
+
 
