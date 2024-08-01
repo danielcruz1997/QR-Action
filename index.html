@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aktionen</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap">
     <style>
-        body { font-family: Arial, sans-serif; }
-        .container { text-align: center; margin-top: 50px; }
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f0f0f0;
+        }
+        .container { 
+            text-align: center; 
+            margin-top: 50px; 
+        }
+        #action {
+            font-family: 'Roboto Condensed', sans-serif;
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -18,16 +29,14 @@
         const actions = [
             { action: "Tauscht die Seiten mit euren Gegnern!! (Becher zählt nicht)" },
             { action: "Drehe dich drei mal im Kreis und wirf, wenn du triffst darfst du den Becher der bei dir getroffen wurde wieder hinstellen." },
-            { action: "Der Becher der getroffen wurde Zählt und die Gegner bekommen Balls Back!" },
+            { action: "Der Becher der getroffen wurde zählt und die Gegner bekommen Balls Back!" },
             { action: "Der getroffene Becher zählt." },
             { action: "Der getroffene Becher zählt und dein Partner muss die nächste Runde mit der schwächeren Hand werfen." },
-            { action: "Wenn es der letzte Becher ist, trinkt stattdessen einen Becher von den Gegnern (die Gegner dürfen aussuchen), der treffer zählt nicht." },
-            { action: "Der Becher zählt, einer von euch hat jetzt die Möglichkeit mit geschlossenen Augen zu werfen: trifft ihr müssen die Gegner 3 Becher trinken, trifft ihr nicht müsst ihr zusätzlich noch ein Becher euerer Wahl trinken." },
+            { action: "Wenn es der letzte Becher ist, trinkt stattdessen einen Becher von den Gegnern (die Gegner dürfen aussuchen), der Treffer zählt nicht." },
+            { action: "Der Becher zählt, einer von euch hat jetzt die Möglichkeit mit geschlossenen Augen zu werfen: trifft ihr, müssen die Gegner 3 Becher trinken, trifft ihr nicht, müsst ihr zusätzlich noch einen Becher eurer Wahl trinken." },
             { action: "Die Gegner müssen einen ihrer Becher auf eure Seite des Tisches stellen. Der Becher zählt nicht." },
-            { action: "Der Becher zählt, ihr dürft dafür aber die Becher eurer Gegner umstellen wenn ihr möchtet." },
-            { action: "Der becher zählt, ihr dürft dafür jetzt jeweil zwei mal werfen." },
-            
-          
+            { action: "Der Becher zählt, ihr dürft dafür aber die Becher eurer Gegner umstellen, wenn ihr möchtet." },
+            { action: "Der Becher zählt, ihr dürft dafür jetzt jeweils zweimal werfen." }
         ];
 
         function getRandomAction() {
@@ -45,5 +54,6 @@
     </script>
 </body>
 </html>
+
 
 
